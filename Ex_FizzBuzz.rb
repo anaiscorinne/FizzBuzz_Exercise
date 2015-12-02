@@ -1,13 +1,17 @@
-(1..100) each do |i|
+
+(1..100).each do |i|
+	result = ""
 	if i % 15 == 0
-		puts "FizzBuzz"
+		result << "FizzBuzz"
 	elsif i % 5 == 0
-		puts "Buzz"
+		result << "Buzz"
 	elsif i % 3 == 0
-		puts "Fizz"
-	else 
-		puts i
+		result << "Fizz"
+	else
+		result << i
 	end
+	puts result
 end
+
 
 
