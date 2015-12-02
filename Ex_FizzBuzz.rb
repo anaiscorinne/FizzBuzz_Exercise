@@ -1,16 +1,22 @@
 
 (1..100).each do |i|
-	result = ""
-	if i % 15 == 0
-		result << "FizzBuzz"
+	if (i % 15 == 0) && (i[0].to_s == "1")
+		puts "FizzBuzzBang"
+	elsif (i % 5 == 0) && (i[0].to_s == "1")
+		puts "BuzzBang"
+	elsif (i % 3 == 0) && (i[0].to_s == "1")
+		puts "FizzBang"
+	elsif i % 15 == 0
+		puts "FizzBuzz"
 	elsif i % 5 == 0
-		result << "Buzz"
+		puts "Buzz"
+	elsif i[0].to_s == "1"
+		puts "Bang"
 	elsif i % 3 == 0
-		result << "Fizz"
+		puts "Fizz"
 	else
-		i
+		puts i
 	end
-	puts result
 end
 
 
