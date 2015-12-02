@@ -1,4 +1,5 @@
-(1..100).each do |i|
+numbers = (1..100)
+for i in numbers
 	if i % 3 == 0 && i % 5 == 0
 		puts "FizzBuzz"
 	elsif i % 5 == 0
