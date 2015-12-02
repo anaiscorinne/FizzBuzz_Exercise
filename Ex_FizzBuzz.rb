@@ -8,7 +8,7 @@
 	elsif i % 3 == 0
 		result << "Fizz"
 	else
-		result << i
+		i
 	end
 	puts result
 end
